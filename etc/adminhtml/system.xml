@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="admin">
+			<group id="theme" sortOrder="3000" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Admin Theme</label>
+				<field id="theme_id" type="select" sortOrder="10" showInDefault="1" translate="label">
+					<label>Admin Theme</label>
+					<source_model>Leeto\AdminTheme\Model\Config\Source\ThemeId</source_model>
+				</field>
+				<field id="logo" type="image" sortOrder="20" showInDefault="1" translate="label">
+					<label>Logo</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+					<upload_dir config="system" scope_info="1">logo</upload_dir>
+					<base_url type="media" scope_info="1">logo</base_url>
+				</field>
+			</group>
+			<group id="colors" sortOrder="3000" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Admin Theme Colors</label>
+				<field id="primary_color" type="text" sortOrder="10" showInDefault="1" translate="label">
+					<label>Primary Color</label>
+					<frontend_model>Leeto\AdminTheme\Block\Colorpicker</frontend_model>
+				</field>
+				<field id="secondary_color" type="text" sortOrder="20" showInDefault="1" translate="label">
+					<label>Secondary Color</label>
+					<frontend_model>Leeto\AdminTheme\Block\Colorpicker</frontend_model>
+				</field>
+				<field id="tertiary_color" type="text" sortOrder="30" showInDefault="1" translate="label">
+					<label>Tertiary Color</label>
+					<frontend_model>Leeto\AdminTheme\Block\Colorpicker</frontend_model>
+				</field>
+				<field id="quaternary_color" type="text" sortOrder="40" showInDefault="1" translate="label">
+					<label>Quaternary Color</label>
+					<frontend_model>Leeto\AdminTheme\Block\Colorpicker</frontend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

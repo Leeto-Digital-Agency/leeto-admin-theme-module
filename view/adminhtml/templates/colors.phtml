@@ -1,0 +1,17 @@
+<?php
+$isThemeActive = $block->isThemeActive();
+?>
+<?php if ($isThemeActive) : ?>
+    <style>
+        /* define css variables */
+        :root {
+            --primary-color: <?= $block->getColorByPath('primary_color', '#373330') ?>;
+            --primary-color-almost: <?= $block->lightenColor($block->getColorByPath('secondary_color', '#524d49')) ?>;
+            --primary-color-dark: <?= $block->darkenColor($block->getColorByPath('primary_color', '#5b5652')) ?>;
+            --tertiary-color: <?= $block->getColorByPath('tertiary_color', '#f7f3eb') ?>;
+            --quaternary-color: <?= $block->getColorByPath('quaternary_color', '#eb5202') ?>;
+            --color-phoenix-brown: <?= $block->darkenColor($block->getColorByPath('quaternary_color', '#b84002')) ?>;
+            --color-tomato-brick: <?= $block->getColorByPath('quaternary_color', '#e22626') ?>;
+        }
+    </style>
+<?php endif; ?>

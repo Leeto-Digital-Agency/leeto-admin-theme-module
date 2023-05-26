@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<admin>
+			<theme>
+				<theme_id>Magento/backend</theme_id>
+			</theme>
+		</admin>
+	</default>
+</config>
