@@ -1,8 +1,9 @@
 {
     "name": "leeto/leeto-admin-theme-module",
-    "description": "a",
+    "description": "Leeto Admin Theme Module",
     "type": "magento2-module",
     "license": "GPL-3.0",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Leeto Digital Agency",
