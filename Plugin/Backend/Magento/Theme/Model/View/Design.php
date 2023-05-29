@@ -11,6 +11,11 @@ use Magento\Store\Model\ScopeInterface;
 class Design
 {
     const XML_PATH_THEME_ID = 'admin/theme/theme_id';
+
+    /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    protected $_scopeConfig;
     
     /**
      * @var \Magento\Framework\App\Config\ScopeConfigInterface
